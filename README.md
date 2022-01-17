@@ -1,3 +1,8 @@
+# Base code for API written in Golang.  
+Using this because I like how the main, router, routes, and handlers are separated into different files for ease of maintenance and readability.  Also, saving it here because I'm tired of trying to remember how I arranged the code.  Again. 
+
+# Below is the original README for the dev container, for reference:
+
 # Try Out Development Containers: Go
 
 A **development container** is a running [Docker](https://www.docker.com) container with a well-defined tool/runtime stack and its prerequisites. You can try out development containers with **[GitHub Codespaces](https://github.com/features/codespaces)** or **[Visual Studio Code Remote - Containers](https://aka.ms/vscode-remote/containers)**.
