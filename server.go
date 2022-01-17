@@ -7,19 +7,15 @@ package main
 
 import (
 	"fmt"
-	"io"
 	"net/http"
 
-	"github.com/microsoft/vscode-remote-try-go/hello"
+	"github.com/rs/cors"
 )
 
-func handle(w http.ResponseWriter, r *http.Request) {
-	io.WriteString(w, hello.Hello())
-}
-
 func main() {
+	router := NewRouter()
+	handler := cors.Default().Handler(router)
 	portNumber := "9000"
-	http.HandleFunc("/", handle)
 	fmt.Println("Server listening on port ", portNumber)
-	http.ListenAndServe(":"+portNumber, nil)
+	http.ListenAndServe(":"+portNumber, handler)
 }
