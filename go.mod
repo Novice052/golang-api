@@ -1,8 +1,8 @@
-module github.com/microsoft/vscode-remote-try-go
+module github.carboniteinc.com/jabbott/golang-api
 
 go 1.14
 
 require (
-	github.com/gorilla/mux v1.8.0 // indirect
-	github.com/rs/cors v1.8.2 // indirect
+	github.com/gorilla/mux v1.8.0
+	github.com/rs/cors v1.8.2
 )
